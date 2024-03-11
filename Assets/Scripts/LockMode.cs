@@ -9,12 +9,19 @@ public class LockMode : MonoBehaviour
     public PostProcessProfile standard;
     public PostProcessProfile nightvision;
     public GameObject nightvisionOverlay;
+    public GameObject flashlightoverlay;
+
+    private Light flashlight=null;
 
     private bool nightvisionEnabled=false;
+    private bool flashlightoverlayEnabled=false;
     // Start is called before the first frame update
     void Start()
     {
+
         vol=GetComponent<PostProcessVolume>();
+        flashlight=GameObject.Find("FlashLight").GetComponent<Light>();
+        flashlight.enabled = false;
         nightvisionOverlay.SetActive(false);
         vol.profile = standard;
         
@@ -30,6 +37,7 @@ public class LockMode : MonoBehaviour
                 vol.profile = nightvision;
                 nightvisionOverlay.SetActive (true); 
                 nightvisionEnabled = true;
+                NightVisionOff();
             }
             else if (nightvisionEnabled == true) 
             {
@@ -40,6 +48,40 @@ public class LockMode : MonoBehaviour
 
             }
            
+
+        }
+
+        if (nightvisionEnabled == true)
+        {
+            NightVisionOff();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (flashlight.enabled== false)
+            {
+                flashlight.enabled = true;
+            }
+            else if (flashlight.enabled == true)
+            {
+                flashlight.enabled = false;
+
+            }
+
+
+        }
+    }
+
+
+
+    private void NightVisionOff()
+    {
+        if(nightvisionOverlay.GetComponent<NightVisionScript>().batteypower<=0)
+        {
+            vol.profile = standard;
+            nightvisionOverlay.SetActive(false);
+            this.gameObject.GetComponent<Camera>().fieldOfView = 60;
+            nightvisionEnabled = false;
 
         }
     }
