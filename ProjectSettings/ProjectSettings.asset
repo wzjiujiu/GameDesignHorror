@@ -737,11 +737,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: fac254c0-69a8-458e-a011-68f49075e53c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: GameDesignHorror
+  organizationId: wzjiujiuzouxian
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

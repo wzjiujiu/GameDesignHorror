@@ -12,6 +12,7 @@ public class NightVisionScript : MonoBehaviour
 
     public float batteypower = 1.0f;
     public float draintime = 2;
+    private bool isDraining = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,9 +63,21 @@ public class NightVisionScript : MonoBehaviour
 
     private void BatteryDrain()
     {
-        if (batteypower > 0.0f)
+        if (isDraining && batteypower > 0.0f)
         {
             batteypower -= 0.25f;
         }
     }
+
+    public void StopDrain()
+    {
+        isDraining = false;
+    }
+
+    public void StartDrain()
+    {
+        isDraining = true;
+    }
+
+
 }

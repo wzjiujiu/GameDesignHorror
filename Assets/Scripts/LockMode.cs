@@ -8,13 +8,20 @@ public class LockMode : MonoBehaviour
     private PostProcessVolume vol;
     public PostProcessProfile standard;
     public PostProcessProfile nightvision;
+    public PostProcessProfile inventory;
+
     public GameObject nightvisionOverlay;
     public GameObject flashlightoverlay;
+
+    public GameObject Terramondo1;
+    public GameObject floodedgrounds;
 
     private Light flashlight=null;
 
     private bool nightvisionEnabled=false;
     private bool flashlightoverlayEnabled=false;
+    private bool mondo2=false;
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +31,8 @@ public class LockMode : MonoBehaviour
         flashlight.enabled = false;
         nightvisionOverlay.SetActive(false);
         vol.profile = standard;
+        Terramondo1 = GameObject.Find("Terrain");
+        floodedgrounds = GameObject.Find("FloodedGrounds");
         
     }
 
@@ -35,6 +44,7 @@ public class LockMode : MonoBehaviour
             if (nightvisionEnabled == false)
             {
                 vol.profile = nightvision;
+                nightvisionOverlay.GetComponent<NightVisionScript>().StartDrain();
                 nightvisionOverlay.SetActive (true); 
                 nightvisionEnabled = true;
                 NightVisionOff();
@@ -43,6 +53,7 @@ public class LockMode : MonoBehaviour
             {
                 vol.profile = standard;
                 nightvisionOverlay.SetActive(false);
+                nightvisionOverlay.GetComponent<NightVisionScript>().StopDrain();
                 this.gameObject.GetComponent<Camera>().fieldOfView = 60;
                 nightvisionEnabled = false;
 
@@ -70,6 +81,42 @@ public class LockMode : MonoBehaviour
 
 
         }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (SaveScript.inventoryOpen == false)
+            {
+                vol.profile = inventory;
+                
+                if (flashlight.enabled == true)
+                {
+                    flashlight.enabled = false;
+
+                }
+                if (nightvisionEnabled == true)
+                {
+
+                    vol.profile = standard;
+                    nightvisionOverlay.SetActive(false);
+                    nightvisionOverlay.GetComponent<NightVisionScript>().StopDrain();
+                    this.gameObject.GetComponent<Camera>().fieldOfView = 60;
+                    nightvisionEnabled = false;
+
+                }
+
+            }
+            else if (SaveScript.inventoryOpen == true)
+            {
+
+                Time.timeScale = 1f;
+                vol.profile = standard;
+
+            }
+
+
+        }
+
+
+
     }
 
 
