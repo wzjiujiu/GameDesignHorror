@@ -15,6 +15,7 @@ public class LockMode : MonoBehaviour
 
     public GameObject Terramondo1;
     public GameObject floodedgrounds;
+    public GameObject inventoryMenu;
 
     private Light flashlight=null;
 
@@ -29,6 +30,7 @@ public class LockMode : MonoBehaviour
         vol=GetComponent<PostProcessVolume>();
         flashlight=GameObject.Find("FlashLight").GetComponent<Light>();
         flashlight.enabled = false;
+        inventoryMenu.SetActive(false);
         nightvisionOverlay.SetActive(false);
         vol.profile = standard;
         Terramondo1 = GameObject.Find("Terrain");
@@ -85,6 +87,7 @@ public class LockMode : MonoBehaviour
         {
             if (SaveScript.inventoryOpen == false)
             {
+                inventoryMenu.SetActive (true);
                 vol.profile = inventory;
                 
                 if (flashlight.enabled == true)
@@ -107,8 +110,8 @@ public class LockMode : MonoBehaviour
             else if (SaveScript.inventoryOpen == true)
             {
 
-                Time.timeScale = 1f;
                 vol.profile = standard;
+                inventoryMenu.SetActive(false);
 
             }
 
