@@ -63,7 +63,7 @@ public class WeaponInventory : MonoBehaviour
     {
         if (weaponNumber == 4)
         {
-            BIGICON.transform.localPosition = new Vector3(-170.6f, 207.7f, 0f);
+            BIGICON.transform.localPosition = new Vector3(-150.6f, 207.7f, 0f);
         }
         else if (weaponNumber == 3) 
         {

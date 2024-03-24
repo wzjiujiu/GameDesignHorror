@@ -43,22 +43,25 @@ public class LockMode : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.N)) 
         {
-            if (nightvisionEnabled == false)
+            if (SaveScript.inventoryOpen == false)
             {
-                vol.profile = nightvision;
-                nightvisionOverlay.GetComponent<NightVisionScript>().StartDrain();
-                nightvisionOverlay.SetActive (true); 
-                nightvisionEnabled = true;
-                NightVisionOff();
-            }
-            else if (nightvisionEnabled == true) 
-            {
-                vol.profile = standard;
-                nightvisionOverlay.SetActive(false);
-                nightvisionOverlay.GetComponent<NightVisionScript>().StopDrain();
-                this.gameObject.GetComponent<Camera>().fieldOfView = 60;
-                nightvisionEnabled = false;
+                if (nightvisionEnabled == false)
+                {
+                    vol.profile = nightvision;
+                    nightvisionOverlay.GetComponent<NightVisionScript>().StartDrain();
+                    nightvisionOverlay.SetActive(true);
+                    nightvisionEnabled = true;
+                    NightVisionOff();
+                }
+                else if (nightvisionEnabled == true)
+                {
+                    vol.profile = standard;
+                    nightvisionOverlay.SetActive(false);
+                    nightvisionOverlay.GetComponent<NightVisionScript>().StopDrain();
+                    this.gameObject.GetComponent<Camera>().fieldOfView = 60;
+                    nightvisionEnabled = false;
 
+                }
             }
            
 
@@ -71,6 +74,8 @@ public class LockMode : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
+            if(SaveScript.inventoryOpen == false)
+            { 
             if (flashlight.enabled== false)
             {
                 flashlight.enabled = true;
@@ -80,7 +85,7 @@ public class LockMode : MonoBehaviour
                 flashlight.enabled = false;
 
             }
-
+            }
 
         }
         if (Input.GetKeyDown(KeyCode.I))
