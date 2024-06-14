@@ -1,0 +1,642 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2334778453896557188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6834146766028967025}
+  - component: {fileID: 8817257280024133948}
+  - component: {fileID: 1003969610770735563}
+  m_Layer: 0
+  m_Name: Valve Hot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6834146766028967025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334778453896557188}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.10664465, y: 1.1051899, z: -1.4043072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5070239992063926685}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8817257280024133948
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334778453896557188}
+  m_Mesh: {fileID: 2303261281761715441, guid: 8c6b37dca9de8414f946b6d2dbdf848f, type: 3}
+--- !u!23 &1003969610770735563
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334778453896557188}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 60a0c872d302db844905b5eecaac8d58, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8072216005321282446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5070239992063926685}
+  - component: {fileID: 4253116412077022123}
+  - component: {fileID: 7510477766655469394}
+  - component: {fileID: 1123789660242593539}
+  m_Layer: 0
+  m_Name: Bathtub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5070239992063926685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072216005321282446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1820772550087834850}
+  - {fileID: 6834146766028967025}
+  - {fileID: 1677742337399496797}
+  - {fileID: 4425818490092005949}
+  - {fileID: 8030361268985900319}
+  - {fileID: 762594806032780583}
+  - {fileID: 5882826341136628107}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4253116412077022123
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072216005321282446}
+  m_Mesh: {fileID: 2457393760949967816, guid: 8c6b37dca9de8414f946b6d2dbdf848f, type: 3}
+--- !u!23 &7510477766655469394
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072216005321282446}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 60a0c872d302db844905b5eecaac8d58, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1123789660242593539
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072216005321282446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -390532218823380606, guid: f1f40210c0f01a14d9b98112253a502e, type: 3}
+--- !u!1 &8725129599178891919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820772550087834850}
+  - component: {fileID: 5353601731165225971}
+  - component: {fileID: 2587040577512125561}
+  m_Layer: 0
+  m_Name: Valve Cold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1820772550087834850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8725129599178891919}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.11175597, y: 1.1051906, z: -1.4043072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5070239992063926685}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5353601731165225971
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8725129599178891919}
+  m_Mesh: {fileID: 1560684752560165157, guid: 8c6b37dca9de8414f946b6d2dbdf848f, type: 3}
+--- !u!23 &2587040577512125561
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8725129599178891919}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 60a0c872d302db844905b5eecaac8d58, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1474024960215612242
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5070239992063926685}
+    m_Modifications:
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6246
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.621
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.436
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50000155
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664655504350632035, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathtub Glass Holder (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d602a4e57f7405942898abef91d8fba3, type: 3}
+--- !u!4 &5882826341136628107 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1474024960215612242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4136935266584310922
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5070239992063926685}
+    m_Modifications:
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9443
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.59877
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724748489673065263, guid: 65f4b41432ed1504caa3aa7d041daeec,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65f4b41432ed1504caa3aa7d041daeec, type: 3}
+--- !u!4 &8030361268985900319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6203932459994618261, guid: 65f4b41432ed1504caa3aa7d041daeec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4136935266584310922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5711251969827655678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5070239992063926685}
+    m_Modifications:
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6246
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.254
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.436
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50000155
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664655504350632035, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathtub Glass Holder (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d602a4e57f7405942898abef91d8fba3, type: 3}
+--- !u!4 &762594806032780583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+    type: 3}
+  m_PrefabInstance: {fileID: 5711251969827655678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5953687530919633540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5070239992063926685}
+    m_Modifications:
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6246
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071057
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664655504350632035, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathtub Glass Holder
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d602a4e57f7405942898abef91d8fba3, type: 3}
+--- !u!4 &1677742337399496797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+    type: 3}
+  m_PrefabInstance: {fileID: 5953687530919633540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8700001134833412324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5070239992063926685}
+    m_Modifications:
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6246
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.102
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071057
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664655504350632035, guid: d602a4e57f7405942898abef91d8fba3,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathtub Glass Holder (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d602a4e57f7405942898abef91d8fba3, type: 3}
+--- !u!4 &4425818490092005949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5032551065237029593, guid: d602a4e57f7405942898abef91d8fba3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8700001134833412324}
+  m_PrefabAsset: {fileID: 0}

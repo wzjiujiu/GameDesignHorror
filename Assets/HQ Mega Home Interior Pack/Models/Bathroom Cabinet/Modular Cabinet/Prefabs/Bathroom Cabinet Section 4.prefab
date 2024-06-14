@@ -1,0 +1,385 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3995619033220247250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83338100750097601}
+  - component: {fileID: 8967534581976147703}
+  - component: {fileID: 3409115361783831054}
+  m_Layer: 0
+  m_Name: Bathroom Cabinet Section 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83338100750097601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3995619033220247250}
+  m_LocalRotation: {x: -0.0000019520521, y: 0.7071068, z: -0.000000014901161, w: 0.7071068}
+  m_LocalPosition: {x: -8.795, y: 0, z: -5.437}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7470998038816261074}
+  - {fileID: 2272386597530147571}
+  - {fileID: 3274029442504884655}
+  - {fileID: 296444095527521215}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: -90, z: 180}
+--- !u!33 &8967534581976147703
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3995619033220247250}
+  m_Mesh: {fileID: -5602961339845004518, guid: a7ae77bb048cf194fb324ad6897e3ea5, type: 3}
+--- !u!23 &3409115361783831054
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3995619033220247250}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 424c575ea58cdd14e828d6c97616561d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1001 &1050260161738402860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 83338100750097601}
+    m_Modifications:
+    - target: {fileID: 1560409017511255952, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathroom Mini Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3971
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000006111291
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000119209275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000008429321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 558d82891acae1e42abfff7be6be4dca, type: 3}
+--- !u!4 &3274029442504884655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1050260161738402860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2873815766215157308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 83338100750097601}
+    m_Modifications:
+    - target: {fileID: 1560409017511255952, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathroom Mini Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1313
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000006111291
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000119209275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000008429321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 558d82891acae1e42abfff7be6be4dca, type: 3}
+--- !u!4 &296444095527521215 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+    type: 3}
+  m_PrefabInstance: {fileID: 2873815766215157308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4356623446229219184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 83338100750097601}
+    m_Modifications:
+    - target: {fileID: 1560409017511255952, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathroom Mini Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6636
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000006111291
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000119209275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000008429321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 558d82891acae1e42abfff7be6be4dca, type: 3}
+--- !u!4 &2272386597530147571 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+    type: 3}
+  m_PrefabInstance: {fileID: 4356623446229219184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4923181240750534225
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 83338100750097601}
+    m_Modifications:
+    - target: {fileID: 1560409017511255952, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathroom Mini Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0000000074285
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.92969
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4565
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000006111291
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000119209275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000008429321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 558d82891acae1e42abfff7be6be4dca, type: 3}
+--- !u!4 &7470998038816261074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2593218390630198659, guid: 558d82891acae1e42abfff7be6be4dca,
+    type: 3}
+  m_PrefabInstance: {fileID: 4923181240750534225}
+  m_PrefabAsset: {fileID: 0}
