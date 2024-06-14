@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1953259897 &8574412962073106934
+TerrainLayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Stony Forest Ground
+  m_DiffuseTexture: {fileID: 2800000, guid: c953f009b6e49df469e29e6b34f38174, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: 1ee1463b9aa3ed04ca14ebd3108fe119, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: e359eca26fd11684cb17fa6fce2419b8, type: 3}
+  m_TileSize: {x: 7, y: 7}
+  m_TileOffset: {x: 0, y: 0}
+  m_Specular: {r: 0, g: 0, b: 0, a: 0}
+  m_Metallic: 0.004
+  m_Smoothness: 0
+  m_NormalScale: 5.44
+  m_DiffuseRemapMin: {x: 0, y: 0, z: 0, w: 0}
+  m_DiffuseRemapMax: {x: 1, y: 1, z: 1, w: 1}
+  m_MaskMapRemapMin: {x: 0.8569726, y: 0, z: 0, w: 0}
+  m_MaskMapRemapMax: {x: 1, y: 1, z: 1, w: 0.10369485}
