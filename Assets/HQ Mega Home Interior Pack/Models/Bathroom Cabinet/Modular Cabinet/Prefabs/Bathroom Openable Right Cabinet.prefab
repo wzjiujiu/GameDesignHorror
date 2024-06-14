@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8216039697538766369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8216039697538766370}
+  m_Layer: 0
+  m_Name: Bathroom Openable Right Cabinet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8216039697538766370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216039697538766369}
+  m_LocalRotation: {x: 0.000001440698, y: -0.0000016391275, z: 0.0000013908437, w: 1}
+  m_LocalPosition: {x: -0.26562, y: -0.13281, z: -0.3825}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8734726970402172001}
+  - {fileID: 3985352772242049523}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1579269325384565567
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8216039697538766370}
+    m_Modifications:
+    - target: {fileID: 6522922189178101069, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathroom Cabinet Part
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -2.593585e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 266bf34fcb180fb42a7dc2aa9e22dab0, type: 3}
+--- !u!4 &8734726970402172001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7844508534039359326, guid: 266bf34fcb180fb42a7dc2aa9e22dab0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1579269325384565567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2206829492678422165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8216039697538766370}
+    m_Modifications:
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000094174
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.38888
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000029010084
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000025630034
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000006463934
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021610235772594023, guid: b5b5d25f2ce275b48b976de12d02671e,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathroom Cabinet Door Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b5b5d25f2ce275b48b976de12d02671e, type: 3}
+--- !u!4 &3985352772242049523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3021610235772594022, guid: b5b5d25f2ce275b48b976de12d02671e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2206829492678422165}
+  m_PrefabAsset: {fileID: 0}
