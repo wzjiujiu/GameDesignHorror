@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements">
+
+  <engine:VisualElement class="content-container">
+    
+    <engine:VisualElement class="header">
+      <engine:Image class="inner-image"/>
+    </engine:VisualElement>
+    
+    <engine:VisualElement class="header-label-bg">
+      <engine:Label name="header-label-text" text="HQ Mega Home Interior Pack"/>
+    </engine:VisualElement>
+    
+    <engine:VisualElement class="nav-content">
+      <engine:VisualElement class="nav-button active" name="nav-btn-details">
+        <engine:Label class="nav-button-text" text="DETAILS"/>
+        <engine:VisualElement class="line"/>
+      </engine:VisualElement>
+      <engine:VisualElement class="nav-button" name="nav-btn-upgrades">
+        <engine:Label class="nav-button-text" text="UPGRADES"/>
+        <engine:VisualElement class="line"/>
+      </engine:VisualElement>
+      <engine:VisualElement class="nav-button" name="nav-btn-socials">
+        <engine:Label class="nav-button-text" text="SOCIAL MEDIA"/>
+        <engine:VisualElement class="line"/>
+      </engine:VisualElement>
+    </engine:VisualElement>
+
+    <engine:VisualElement class="content">
+      
+      <engine:VisualElement name="details-holder">
+        <engine:TextElement class="details-text bold" text="Thank you for getting this package!"/>
+        <engine:TextElement class="details-text" text="`This pack is getting updated with fresh new content. Be sure to keep an eye out!"/>
+        <engine:TextElement class="details-text" text="To read about some of the features within this pack, take a look at the manual."/>
+        <engine:Button class="pdf-btn">
+          <engine:Image class="res pdf" name="ico-pdf"/>
+          <engine:TextElement class="pdf-title" text="pdf file.pdf"/>
+        </engine:Button>
+        <engine:TextElement class="details-text" text="`Experiencing some problems or have any questions?"/>
+        <engine:VisualElement class="inline">
+          <engine:TextElement class="details-text" text="Don't hesitate to contact: "/>
+          <engine:TextField class="fieldless-text readonly" text="watchfinddo@gmail.com"/>
+        </engine:VisualElement>
+      </engine:VisualElement>
+      
+      <engine:VisualElement name="upgrades-holder">
+
+        <engine:TextElement class="details-text" text="To learn more about how to properly upgrade package contents to a different pipeline, check out the manual."/>
+
+        <engine:VisualElement class="upgrade-item">
+          <engine:VisualElement class="upgrade-title-content">
+            <engine:TextElement class="upgrade-title bold" text="High-Definition"/>
+            <engine:TextElement class="upgrade-title" text="Pipeline"/>
+          </engine:VisualElement>
+          <engine:Button class="upgrade-select hdrp" text="Select"/>
+        </engine:VisualElement>
+
+        <engine:VisualElement class="upgrade-item">
+          <engine:VisualElement class="upgrade-title-content">
+            <engine:TextElement class="upgrade-title bold" text="Universal"/>
+            <engine:TextElement class="upgrade-title" text="Pipeline"/>
+          </engine:VisualElement>
+          <engine:Button class="upgrade-select urp" text="Select"/>
+        </engine:VisualElement>
+
+      </engine:VisualElement>
+
+      <engine:VisualElement name="socials-holder">
+
+        <engine:VisualElement class="social-content">
+          <engine:VisualElement class="social-link">
+            <engine:Image class="res invert socials" name="ico-assetstore"/>
+            <engine:TextElement text="AssetStore"/>
+          </engine:VisualElement>
+          <engine:TextField class="social-url readonly" text="https://assetstore.unity.com/publishers/8326"/>
+        </engine:VisualElement>
+
+        <engine:VisualElement class="social-content">
+          <engine:VisualElement class="social-link">
+            <engine:Image class="res socials" name="ico-youtube"/>
+            <engine:TextElement text="Youtube"/>
+          </engine:VisualElement>
+          <engine:TextField class="social-url readonly" text="https://www.youtube.com/user/WatchFindDoMedia"/>
+        </engine:VisualElement>
+
+        <engine:VisualElement class="social-content">
+          <engine:VisualElement class="social-link">
+            <engine:Image class="res invert socials" name="ico-github"/>
+            <engine:TextElement text="Github"/>
+          </engine:VisualElement>
+          <engine:TextField class="social-url readonly" text="https://github.com/WatchFindDo/"/>
+        </engine:VisualElement>
+
+        <engine:VisualElement class="social-content">
+          <engine:VisualElement class="social-link">
+            <engine:Image class="res socials" name="ico-discord"/>
+            <engine:TextElement text="Discord"/>
+          </engine:VisualElement>
+          <engine:TextField class="social-url readonly" text="https://discord.com/invite/ZRXUJUw"/>
+        </engine:VisualElement>
+
+      </engine:VisualElement>
+
+      <engine:Toggle class="win-state-toggle" label="Do not show at startup"></engine:Toggle>
+      
+    </engine:VisualElement>
+    
+  </engine:VisualElement>
+</UXML>

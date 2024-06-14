@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 866be478b29a76645b9b838ca0a158a0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - visualTree: {fileID: 9197481963319205126, guid: fcebaf2a60d85ca42863d7b2d0967954,
+      type: 3}
+  - style: {fileID: 7433441132597879392, guid: db36d33b19cc915429280156191166e0, type: 3}
+  - manual: {fileID: 102900000, guid: 5b3f304d97633d64b97c35c612e3bd69, type: 3}
+  - hdrpUpgrade: {fileID: 102900000, guid: da0875132ae9ae5458afdf55389a6e86, type: 3}
+  - urpUpgrade: {fileID: 102900000, guid: b316f4fb704f6174b8c02b67af6cdaa7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

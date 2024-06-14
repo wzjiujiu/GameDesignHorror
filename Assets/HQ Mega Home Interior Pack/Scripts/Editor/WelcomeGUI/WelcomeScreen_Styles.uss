@@ -1,0 +1,181 @@
+﻿.content-container
+{
+	width: 100%;
+    height: 500px;
+}
+.header
+{
+	width: 100%;
+	height: 225px;
+	overflow: hidden;
+}
+.inner-image
+{
+	position: absolute;
+	top: -85px;
+}
+.header-label-bg
+{
+	width: 100%;
+	height: 35px;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 1);
+	-unity-font-style: bold-and-italic;
+	padding-left: 10px;
+}
+.nav-content
+{
+	width: 100%;
+	height: 78.5px;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.nav-button
+{
+	width: 50%;
+	height: 100%;
+	margin: 0px;
+	font-size: 14px;
+	justify-content: center;
+	align-items: center;
+    -unity-font-style: bold;
+}
+.nav-button.active, .nav-button.hover
+{
+	background-color: rgba(65, 65, 65, 1);
+}
+.nav-button.pressed
+{
+	background-color: rgba(60, 60, 60, 1);
+}
+.line
+{
+	position: absolute;
+	bottom: 0px;
+	background-color: rgba(255, 255, 255, .1);
+	height: 1px; width: 100%;
+}
+.nav-button.active .line
+{
+	background-color: rgba(160, 212, 2, 1);
+	height: 2px;
+}
+.content
+{
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	background-color: rgba(38.5, 38.5, 38.5, 1); 
+	flex-direction: column;
+	justify-content: space-between;
+}
+#details-holder, #upgrades-holder, #socials-holder
+{
+	width: 100%;
+	height: auto;
+}
+.details-text
+{
+	white-space: normal;
+}
+.bold
+{
+	-unity-font-style: bold;
+}
+.res.socials
+{
+	width: 16px; height: 16px;
+	margin-right: 5px;
+}
+.social-link
+{
+	justify-content: flex-start;
+	flex-direction: row;
+	align-items: center;
+}
+.social-content
+{
+	margin-top: 15px;
+}
+.upgrade-item
+{
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(25, 25, 25, 1);
+	padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;
+	border-radius: 25px;
+	margin-top: 15px;
+}
+.upgrade-title-content
+{
+	flex-direction: row;
+}
+.upgrade-title
+{
+	font-size: 16px;
+	margin-left: 5px;
+}
+.upgrade-select
+{
+	font-size: 16px;
+	margin-left: 5px;
+	padding: 5px;
+	min-width: 85px;
+	margin-right: 5px;
+	border-radius: 8px;
+	background-color: rgba(160, 212, 2, 1);
+	color: rgba(0, 0, 0, 1);
+}
+.upgrade-select:hover
+{
+	background-color: rgba(180, 232, 22, 1);
+}
+.upgrade-select:active
+{
+	background-color: rgba(140, 192, 0, 1);
+}
+.pdf-btn
+{
+	flex-direction: row;
+	align-items: center;
+	background-color: rgba(25, 25, 25, 1);
+	border-radius: 25px;
+	padding: 10px;
+	margin-top: 15px;
+	border-width: 0px;
+}
+.pdf-btn:hover
+{
+	background-color: rgba(28.5, 28.5, 28.5, 1);
+}
+.pdf-btn:active
+{
+	background-color: rgba(26.5, 26.5, 26.5, 1);
+}
+.res.pdf
+{
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.pdf-title
+{
+	font-size: 13px;
+	-unity-font-style: italic;
+}
+.inline
+{
+	flex-direction: row;
+}
+.fieldless-text
+{
+	padding: 0px; margin: 0px; border-width: 0px; background-image: none;
+}
+.fieldless-text #unity-text-input
+{
+	padding: 0px; margin: 0px; border-width: 0px;
+	border-color: rgba(38, 38, 38, 1);
+}
