@@ -1,0 +1,289 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3964694696646974648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 98574562992746155}
+  - component: {fileID: 8936605891925202077}
+  - component: {fileID: 3402956458937460836}
+  - component: {fileID: 5728303474354081004}
+  m_Layer: 0
+  m_Name: Kitchen Upper Cabinet 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &98574562992746155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964694696646974648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.662, y: 2.348, z: 7.3894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2344849951669242090}
+  - {fileID: 3018868924743402888}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8936605891925202077
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964694696646974648}
+  m_Mesh: {fileID: -4750764956705663747, guid: 74143fa396df6df48bde9138c6370457, type: 3}
+--- !u!23 &3402956458937460836
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964694696646974648}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e19a0f9207c0afe468889f3240e32635, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5728303474354081004
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964694696646974648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.90312713, y: 1.0284874, z: 0.5525001}
+  m_Center: {x: 0.0000012516975, y: -0.00000017881393, z: 0.27624577}
+--- !u!1001 &4909557599117559098
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 98574562992746155}
+    m_Modifications:
+    - target: {fileID: 836861329737094722, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815860384773692047, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464975957426370582, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45104468
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00054488715
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253280315126222303, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen Upper Cabinet Right Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994129316730801776, guid: 20513804f2ef0b3448998f045213eef0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20513804f2ef0b3448998f045213eef0, type: 3}
+--- !u!4 &2344849951669242090 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7253280315126222288, guid: 20513804f2ef0b3448998f045213eef0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4909557599117559098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7617369070805025798
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 98574562992746155}
+    m_Modifications:
+    - target: {fileID: 3707188802689179077, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45104307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00054426113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635182055488635279, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen Upper Cabinet Left Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032038046351048540, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221761361563007854, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302608893378786193, guid: de213cc896a650b4c8587ac9af008485,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de213cc896a650b4c8587ac9af008485, type: 3}
+--- !u!4 &3018868924743402888 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4635182055488635278, guid: de213cc896a650b4c8587ac9af008485,
+    type: 3}
+  m_PrefabInstance: {fileID: 7617369070805025798}
+  m_PrefabAsset: {fileID: 0}

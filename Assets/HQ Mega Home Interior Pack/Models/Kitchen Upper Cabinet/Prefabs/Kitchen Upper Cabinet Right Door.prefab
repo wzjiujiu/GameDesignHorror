@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7253280315126222303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7253280315126222288}
+  m_Layer: 0
+  m_Name: Kitchen Upper Cabinet Right Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7253280315126222288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7253280315126222303}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.000007391, y: 0.4502, z: 0.565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9046649136419703301}
+  - {fileID: 5371326700774521955}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1768239588464344333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7253280315126222288}
+    m_Modifications:
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8500003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8500003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710695
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000070776775
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000054940597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7231545684935684989, guid: 0a346f6271b8411478157b18cf1a1d84,
+        type: 3}
+      propertyPath: m_Name
+      value: Handle 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a346f6271b8411478157b18cf1a1d84, type: 3}
+--- !u!4 &5371326700774521955 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5908940021423882606, guid: 0a346f6271b8411478157b18cf1a1d84,
+    type: 3}
+  m_PrefabInstance: {fileID: 1768239588464344333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3249631968891172683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7253280315126222288}
+    m_Modifications:
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.225
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 2.8421703e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -2.8421703e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407996577394986845, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen Upper Cabinet Door
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c, type: 3}
+--- !u!4 &9046649136419703301 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5806587408005135694, guid: 0f2352b8cd141fd40a85a1e0c8cb2d9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3249631968891172683}
+  m_PrefabAsset: {fileID: 0}
