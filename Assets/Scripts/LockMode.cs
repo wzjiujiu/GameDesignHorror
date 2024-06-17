@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using System;
 
 public class LockMode : MonoBehaviour
 {
@@ -17,12 +18,18 @@ public class LockMode : MonoBehaviour
     public GameObject floodedgrounds;
     public GameObject inventoryMenu;
 
+    private static System.Random random = new System.Random();
     private Light flashlight=null;
 
     private bool nightvisionEnabled=false;
     private bool flashlightoverlayEnabled=false;
     private bool mondo2=false;
- 
+    public GameObject point;
+    public PostProcessProfile[] bliklist;
+    Vignette vignette;
+    private Animator animator;
+    private bool hasClicked = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +40,12 @@ public class LockMode : MonoBehaviour
         inventoryMenu.SetActive(false);
         nightvisionOverlay.SetActive(false);
         vol.profile = standard;
+  
         Terramondo1 = GameObject.Find("Terrain");
         floodedgrounds = GameObject.Find("FloodedGrounds");
-        
+        animator = GetComponent<Animator>();
+
+
     }
 
     // Update is called once per frame
@@ -117,15 +127,48 @@ public class LockMode : MonoBehaviour
 
                 vol.profile = standard;
                 inventoryMenu.SetActive(false);
+                
 
             }
 
 
         }
+        if (SaveScript.inventoryOpen == true)
+        {
+            Cursor.visible = true;
+            point.SetActive(false);
+        }
+        else
+        {
+            Cursor.visible = false;
+            point.SetActive(true);
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            int randomNumber = random.Next(0, 4);
+            vol.profile = bliklist[randomNumber];
+
+
+        }
+
+         if (Input.GetKeyDown(KeyCode.B) && !hasClicked)
+        {
+            // Trigger animation
+            animator.SetTrigger("Blink");
+            hasClicked = true; // Prevent multiple clicks
+        }
+
+        // Check if the Blink animation has finished playing
+        if (hasClicked && !animator.GetCurrentAnimatorStateInfo(0).IsName("Blink"))
+        {
+            hasClicked = false; // Reset hasClicked flag
+        }
 
 
 
-    }
+     }
 
 
 

@@ -11,6 +11,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+        public static float FPSmental=100;
+        public static int FPShealth = 100;
+        private float runsSpeedAmt;
+        public static float walkSpeedAmt;
         public static bool inventorySwitchedOn = false;
         public static bool pausePanelSwitchedOn = false;
         [SerializeField] private bool m_IsWalking;
@@ -49,6 +53,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Use this for initialization
         private void Start()
         {
+            runsSpeedAmt = m_RunSpeed;
+            walkSpeedAmt = m_WalkSpeed;
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
@@ -75,6 +81,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     inventorySwitchedOn = false;
                 }
+            }
+            if(FPSmental<20)
+            {
+                m_RunSpeed = m_WalkSpeed;
+            }
+            else
+            {
+                m_RunSpeed = runsSpeedAmt;
             }
 
             if (inventorySwitchedOn == false)

@@ -21,6 +21,11 @@ public class WeaponInventory : MonoBehaviour
     private int choosenWeaponNumber;
     public Button[] weaponButtons;
 
+    public GameObject useButton, combineButton;
+    public GameObject combinePanel, combineUseButton;
+    public Image[] combineItems;
+    public Text amtText;
+    public GameObject sprayPanel;
 
 
     void Start()
@@ -29,6 +34,9 @@ public class WeaponInventory : MonoBehaviour
         bigIcon.sprite = bigIcons[0];
         title.text = titles[0];
         description.text = descriptions[0];
+
+        combinePanel.SetActive(false);
+        combineButton.SetActive(false);
 
     }
 
@@ -57,6 +65,39 @@ public class WeaponInventory : MonoBehaviour
 
             }
         }
+
+        if (choosenWeaponNumber < 5)
+        {
+            combinePanel.SetActive(false);
+            combineButton.SetActive(false);
+        }
+
+        if (SaveScript.itemPickedUp[2]==true)
+        {
+            combineItems[0].color = new Color(1, 1, 1, 1);
+        }
+
+        if (SaveScript.itemPickedUp[2] == false)
+        {
+            combineItems[0].color = new Color(1, 1, 1, 0.06f);
+        }
+
+        if (SaveScript.itemPickedUp[3] == true)
+        {
+            combineItems[1].color = new Color(1, 1, 1, 1);
+        }
+
+        if (SaveScript.itemPickedUp[3] == false)
+        {
+            combineItems[1].color = new Color(1, 1, 1, 0.06f);
+        }
+
+        if (SaveScript.weaponAmts[choosenWeaponNumber] <= 0)
+        {
+            ChooseWeapon(0);
+        }
+
+        
     }
 
     public void ChooseWeapon(int weaponNumber)
@@ -80,11 +121,90 @@ public class WeaponInventory : MonoBehaviour
         audioPlayer.Play();
         choosenWeaponNumber = weaponNumber;
 
+        if(choosenWeaponNumber >=5)
+        {
+            combineButton.SetActive(true);
+            combinePanel.SetActive(false);
+        }
+        if (choosenWeaponNumber < 5)
+        {
+            combinePanel.SetActive(false);
+            combineButton.SetActive(false);
+        }
+        amtText.text = "Amts: " + SaveScript.weaponAmts[weaponNumber];
+
+        if (choosenWeaponNumber == 5)
+        {
+            useButton.SetActive(false);
+        }
+        else
+        {
+            useButton.SetActive(true);
+        }
+
+
     }
     public void AssignWeapon()
     {
         SaveScript.weaponID = choosenWeaponNumber;
         audioPlayer.clip = select;
         audioPlayer.Play();
+    }
+
+    public void CombineAssignWeapon()
+    {
+        if(choosenWeaponNumber ==5) 
+        {
+            SaveScript.weaponID=choosenWeaponNumber;
+            if (sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f)
+            {
+                sprayPanel.GetComponent<SprayScript>().sprayAmount = 1.0f;
+            }
+        }
+
+        if (choosenWeaponNumber == 6)
+        {
+            SaveScript.weaponID = choosenWeaponNumber+=1;
+        }
+
+        audioPlayer.clip = select;
+        audioPlayer.Play();
+
+    }
+
+    public void CombineAction()
+    {
+        combinePanel.SetActive(true );
+
+        if (choosenWeaponNumber == 5)
+        {
+            combineItems[1].transform.gameObject.SetActive(false);
+            if (SaveScript.itemPickedUp[2] == true)
+            {
+                combineUseButton.SetActive(true);
+            }
+
+            if (SaveScript.itemPickedUp[2] == false)
+            {
+                combineUseButton.SetActive(false);
+            }
+
+        }
+
+        if (choosenWeaponNumber == 6)
+        {
+            combineItems[1].transform.gameObject.SetActive(true);
+            if (SaveScript.itemPickedUp[2] == true && SaveScript.itemPickedUp[3] == true)
+            {
+                combineUseButton.SetActive(true);
+            }
+
+            if (SaveScript.itemPickedUp[2] == false || SaveScript.itemPickedUp[3] == false)
+            {
+                combineUseButton.SetActive(false);
+            }
+
+        }
+
     }
 }

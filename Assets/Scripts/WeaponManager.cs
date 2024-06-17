@@ -12,7 +12,8 @@ public class WeaponManager : MonoBehaviour
         pistol,
         shotgun,
         SparyCan,
-        Bottle
+        Bottle,
+        BottleWithLighter
     }
 
     public weaponsSelect chosenWeapon;
@@ -22,6 +23,12 @@ public class WeaponManager : MonoBehaviour
     private AudioSource audioplayer;
     public AudioClip[] weaponSounds;
     private int currentWeaponID;
+    private bool spraySoundOn = false;
+    public GameObject sprayPanel;
+    public static bool emptyBottleThrow = false;
+    public static bool fireBottleThrow = false;
+    private bool sprayEmpty = false;
+    private bool stopSpray = false;
 
     // Start is called before the first frame update
     void Start()
@@ -45,12 +52,65 @@ public class WeaponManager : MonoBehaviour
         {
             if (SaveScript.inventoryOpen==false)
             {
-                anim.SetTrigger("Attack");
-                audioplayer.clip = weaponSounds[SaveScript.weaponID];
-                audioplayer.Play();
+                if (SaveScript.currentAmmo[SaveScript.weaponID] > 0)
+                {
+                    anim.SetTrigger("Attack");
+                    audioplayer.clip = weaponSounds[SaveScript.weaponID];
+                    audioplayer.Play();
+                    if(SaveScript.weaponID == 3||SaveScript.weaponID==4)
+                    {
+                        SaveScript.currentAmmo[SaveScript.weaponID]--;
+                    }
+                }
+                else
+                {
+                    if (SaveScript.weaponID == 3 || SaveScript.weaponID == 4)
+                    {
+                        audioplayer.clip = weaponSounds[8];
+                        audioplayer.Play();
+                    }
+
+                }
 
             }
         
+        }
+        if(Input.GetMouseButton(0) && sprayPanel.GetComponent<SprayScript>().sprayAmount>0.0f)
+        {
+            sprayEmpty = false;
+            stopSpray = false;
+            if(SaveScript.weaponID==5 && SaveScript.inventoryOpen == false)
+            {
+                if (spraySoundOn == false)
+                {
+                    spraySoundOn = true;
+                    anim.SetTrigger("Attack");
+                    StartCoroutine(StartSpraySound());
+                }
+
+            }
+        }
+        if (Input.GetMouseButtonUp(0) || sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f)
+        {
+            if (SaveScript.weaponID == 5 && SaveScript.inventoryOpen == false && stopSpray==false)
+            {
+                stopSpray = true;
+                anim.SetTrigger("Release");
+                spraySoundOn=false;
+                audioplayer.Stop();
+                audioplayer.loop = false;
+                
+
+            }
+        }
+        if(sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f && sprayEmpty==false)
+        {
+            sprayEmpty = true;
+            SaveScript.weaponAmts[5]--;
+            if (SaveScript.weaponAmts[6]==0)
+            {
+                SaveScript.weaponPickedUp[6] = false;
+            }
         }
 
     }
@@ -102,9 +162,35 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    public void BottleThrowEmpty()
+    {
+        emptyBottleThrow = true;
+    }
+
+    public void BottleThrowFire()
+    {
+        fireBottleThrow = true;
+    }
+
+    public void LoadAnotherBottle()
+    {
+       if(SaveScript.weaponID==6)
+        {
+            ChangeWeapons();
+        }
+    }
+
     IEnumerator WeaponReset()
     {
         yield return new WaitForSeconds(0.5f);
         anim.SetBool("WeaponChanged", false);
+    }
+
+    IEnumerator StartSpraySound()
+    {
+        yield return new WaitForSeconds(0.3f);
+        audioplayer.clip = weaponSounds[SaveScript.weaponID];
+        audioplayer.Play();
+        audioplayer.loop = true;
     }
 }
