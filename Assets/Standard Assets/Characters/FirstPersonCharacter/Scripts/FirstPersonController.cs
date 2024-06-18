@@ -82,7 +82,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     inventorySwitchedOn = false;
                 }
             }
-            if(FPSmental<20)
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (pausePanelSwitchedOn == false)
+                {
+                    pausePanelSwitchedOn = true;
+                }
+                else if (pausePanelSwitchedOn == true)
+                {
+                    pausePanelSwitchedOn = false;
+                }
+            }
+            if (FPSmental<20)
             {
                 m_RunSpeed = m_WalkSpeed;
             }
@@ -91,7 +103,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_RunSpeed = runsSpeedAmt;
             }
 
-            if (inventorySwitchedOn == false)
+            if (inventorySwitchedOn == false && pausePanelSwitchedOn==false)
             {
                 RotateView();
                 // the jump state needs to read here to make sure it is not missed
@@ -127,7 +139,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
-            if (inventorySwitchedOn == false)
+            if (inventorySwitchedOn == false && pausePanelSwitchedOn==false)
             {
                 float speed;
                 GetInput(out speed);

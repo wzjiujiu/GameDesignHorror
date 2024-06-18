@@ -79,7 +79,7 @@ public class WeaponManager : MonoBehaviour
         {
             sprayEmpty = false;
             stopSpray = false;
-            if(SaveScript.weaponID==5 && SaveScript.inventoryOpen == false)
+            if(SaveScript.weaponID==5 && SaveScript.inventoryOpen == false && SaveScript.OptionOpen== false)
             {
                 if (spraySoundOn == false)
                 {

@@ -17,6 +17,7 @@ public class LockMode : MonoBehaviour
     public GameObject Terramondo1;
     public GameObject floodedgrounds;
     public GameObject inventoryMenu;
+    public GameObject optionMenu;
 
     private static System.Random random = new System.Random();
     private Light flashlight=null;
@@ -132,8 +133,48 @@ public class LockMode : MonoBehaviour
             }
 
 
+
+
         }
-        if (SaveScript.inventoryOpen == true)
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (SaveScript.OptionOpen == false)
+            {
+                optionMenu.SetActive(true);
+                vol.profile = inventory;
+
+                if (flashlight.enabled == true)
+                {
+                    flashlight.enabled = false;
+
+                }
+                if (nightvisionEnabled == true)
+                {
+
+                    vol.profile = standard;
+                    nightvisionOverlay.SetActive(false);
+                    nightvisionOverlay.GetComponent<NightVisionScript>().StopDrain();
+                    this.gameObject.GetComponent<Camera>().fieldOfView = 60;
+                    nightvisionEnabled = false;
+
+                }
+
+            }
+            else if (SaveScript.OptionOpen == true)
+            {
+
+                vol.profile = standard;
+                optionMenu.SetActive(false);
+
+
+            }
+
+
+
+
+        }
+        if (SaveScript.inventoryOpen == true||SaveScript.OptionOpen==true)
         {
             Cursor.visible = true;
             point.SetActive(false);

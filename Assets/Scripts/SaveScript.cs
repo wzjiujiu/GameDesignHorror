@@ -6,6 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class SaveScript : MonoBehaviour
 {
     public static bool inventoryOpen = false;
+    public static bool OptionOpen = false;
     public static int weaponID = 0;
     public static int itemID = 0;
     public static bool [] weaponPickedUp = new bool[7];
@@ -64,7 +65,16 @@ public class SaveScript : MonoBehaviour
             inventoryOpen = false;
         }
 
-        if(Input.GetAxis("Vertical")!=0 && Input.GetKey(KeyCode.LeftShift) && FirstPersonController.FPSmental>0.0f)
+        if (FirstPersonController.pausePanelSwitchedOn == true)
+        {
+            OptionOpen = true;
+        }
+        if (FirstPersonController.pausePanelSwitchedOn == false)
+        {
+            OptionOpen = false;
+        }
+
+        if (Input.GetAxis("Vertical")!=0 && Input.GetKey(KeyCode.LeftShift) && FirstPersonController.FPSmental>0.0f)
         {
             FirstPersonController.FPSmental-=5*Time.deltaTime;
             mental=FirstPersonController.FPSmental;
