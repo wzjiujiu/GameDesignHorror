@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using System;
+using UnityEngine.SceneManagement;
 
 public class LockMode : MonoBehaviour
 {
@@ -99,6 +100,7 @@ public class LockMode : MonoBehaviour
             }
 
         }
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (SaveScript.inventoryOpen == false)
@@ -139,6 +141,7 @@ public class LockMode : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("i clicked escape");
             if (SaveScript.OptionOpen == false)
             {
                 optionMenu.SetActive(true);
@@ -170,10 +173,20 @@ public class LockMode : MonoBehaviour
 
             }
 
+        }
 
+        if ( SaveScript.reload == true)
+        {
+
+            vol.profile = standard;
+            optionMenu.SetActive(false);
+            SaveScript.reload = false;
 
 
         }
+
+
+
         if (SaveScript.inventoryOpen == true||SaveScript.OptionOpen==true)
         {
             Cursor.visible = true;

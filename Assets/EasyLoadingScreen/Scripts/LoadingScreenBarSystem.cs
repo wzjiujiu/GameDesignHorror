@@ -23,12 +23,38 @@ public class LoadingScreenBarSystem : MonoBehaviour {
 
     public VideoClip loading_eyesVideoClip;
 
+    private UnityEngine.SceneManagement.Scene scene;
+
+    private bool isloaded=false;
+
 
     public void ExitGame()
     {
         Application.Quit();
     }
 
+    void Start()
+    {
+        string sceneName = SceneManager.GetSceneByBuildIndex(1).name;
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+           scene = SceneManager.GetSceneAt(i);
+            if (scene.name == sceneName)
+            {
+                isloaded = true;
+            }
+        }
+
+        if(isloaded)
+        {
+            Debug.Log("YES");
+        }
+        else
+        {
+            Debug.Log("NO");
+        }
+        Cursor.visible = true;
+    }
 
 
     public void loadingScreen (int sceneNo)

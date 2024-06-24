@@ -28,6 +28,7 @@ public class WeaponInventory : MonoBehaviour
     public GameObject sprayPanel;
 
 
+
     void Start()
     {
         audioPlayer = GetComponent<AudioSource>();
@@ -37,6 +38,7 @@ public class WeaponInventory : MonoBehaviour
 
         combinePanel.SetActive(false);
         combineButton.SetActive(false);
+       
 
     }
 

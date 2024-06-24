@@ -21,6 +21,7 @@ public class SaveScript : MonoBehaviour
     public static int health;
     public static GameObject doorObject;
     public static float movementspeed = FirstPersonController.walkSpeedAmt;
+    public static bool reload = false;
 
     public static List<GameObject> monsterChasing= new List<GameObject>();
 
@@ -40,6 +41,7 @@ public class SaveScript : MonoBehaviour
         ammoAmts[0] = 12;
         ammoAmts[1] = 4;
         movementspeed = FirstPersonController.walkSpeedAmt;
+       
 
         for (int i = 0;i<currentAmmo.Length;i++)
         {
@@ -54,6 +56,8 @@ public class SaveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(OptionOpen);
+        Time.timeScale = OptionOpen ? 0 : 1;
         FirstPersonController.FPSmental = mental;
         FirstPersonController.FPShealth = health;
         if(FirstPersonController.inventorySwitchedOn==true)
@@ -68,6 +72,7 @@ public class SaveScript : MonoBehaviour
         if (FirstPersonController.pausePanelSwitchedOn == true)
         {
             OptionOpen = true;
+            
         }
         if (FirstPersonController.pausePanelSwitchedOn == false)
         {
@@ -116,5 +121,27 @@ public class SaveScript : MonoBehaviour
             }
         }
 
+    }
+
+    public void Resetall()
+    {
+        mental = FirstPersonController.FPSmental;
+        health = 99;
+        weaponAmts[0] = 1;
+        weaponPickedUp[0] = true;
+        itemPickedUp[0] = true;
+        itemPickedUp[1] = true;
+        itemAmts[0] = 1;
+        itemAmts[1] = 1;
+        ammoAmts[0] = 12;
+        ammoAmts[1] = 4;
+        movementspeed = FirstPersonController.walkSpeedAmt;
+
+        for (int i = 0; i < currentAmmo.Length; i++)
+        {
+            currentAmmo[i] = 2;
+        }
+        currentAmmo[3] = 12;
+        currentAmmo[5] = 0;
     }
 }

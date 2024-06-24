@@ -50,7 +50,7 @@ public class WeaponManager : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-            if (SaveScript.inventoryOpen==false)
+            if (SaveScript.inventoryOpen==false && SaveScript.OptionOpen == false)
             {
                 if (SaveScript.currentAmmo[SaveScript.weaponID] > 0)
                 {
@@ -92,7 +92,7 @@ public class WeaponManager : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0) || sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f)
         {
-            if (SaveScript.weaponID == 5 && SaveScript.inventoryOpen == false && stopSpray==false)
+            if (SaveScript.weaponID == 5 && SaveScript.inventoryOpen == false && stopSpray==false && SaveScript.OptionOpen == false)
             {
                 stopSpray = true;
                 anim.SetTrigger("Release");
