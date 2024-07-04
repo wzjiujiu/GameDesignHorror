@@ -31,6 +31,8 @@ public class LockMode : MonoBehaviour
     Vignette vignette;
     private Animator animator;
     private bool hasClicked = false;
+    private bool hasClicked1 = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -199,25 +201,39 @@ public class LockMode : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            int randomNumber = random.Next(0, 4);
-            vol.profile = bliklist[randomNumber];
-
-
-        }
 
          if (Input.GetKeyDown(KeyCode.B) && !hasClicked)
         {
             // Trigger animation
+            int randomNumber = random.Next(0, 4);
+            vol.profile = bliklist[randomNumber];
             animator.SetTrigger("Blink");
             hasClicked = true; // Prevent multiple clicks
         }
 
+        if (Input.GetKeyDown(KeyCode.P) )
+        {
+            // Trigger animation
+            animator.SetTrigger("BlinkMouse_1");
+            
+        }
+
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            // Trigger animation
+            int randomNumber = random.Next(0, 4);
+            vol.profile = bliklist[randomNumber];
+            animator.SetTrigger("BlinkMouse_2");
+          
+        }
+
+
+
         // Check if the Blink animation has finished playing
-        if (hasClicked && !animator.GetCurrentAnimatorStateInfo(0).IsName("Blink"))
+        if (hasClicked  && !animator.GetCurrentAnimatorStateInfo(0).IsName("Blink") &&!animator.GetCurrentAnimatorStateInfo(0).IsName("BlinkMouse_1") && !animator.GetCurrentAnimatorStateInfo(0).IsName("BlinkMouse_1"))
         {
             hasClicked = false; // Reset hasClicked flag
+            
         }
 
 
