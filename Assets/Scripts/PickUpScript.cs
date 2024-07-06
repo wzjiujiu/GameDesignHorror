@@ -126,7 +126,7 @@ public class PickUpScript : MonoBehaviour
                         Destroy(hit.transform.gameObject, 0.2f);
                     }
                 }
-                else if (hit.transform.gameObject.CompareTag("door"))
+                else if (hit.transform.gameObject.CompareTag("door")|| hit.transform.gameObject.CompareTag("corridorDor"))
                 {
                     SaveScript.doorObject = hit.transform.gameObject;
                     Debug.Log(SaveScript.doorObject);
@@ -134,19 +134,26 @@ public class PickUpScript : MonoBehaviour
                     doorMessageObj.SetActive(true);
                     doorMessage.text=hit.transform.gameObject.GetComponent<DoorType>().message;
                     DialogueText.text = "There is a door maybe is there something inside..let'see";
-                    DialoguePanel.gameObject.SetActive(true);
-                   
-                    if (hit.transform.gameObject.GetComponent<DoorType>().locked == true)
+                    if (SaveScript.eyesclosed == true)
                     {
-                        
-                        hit.transform.gameObject.GetComponent<DoorType>().message = "Find the key to open " + hit.transform.gameObject.GetComponent<DoorType>().chooseDoor  ;
+                        DialoguePanel.gameObject.SetActive(true);
 
-                        
+                        if (hit.transform.gameObject.GetComponent<DoorType>().locked == true)
+                        {
+
+                            hit.transform.gameObject.GetComponent<DoorType>().message = "Find the key to open " + hit.transform.gameObject.GetComponent<DoorType>().chooseDoor;
+
+
+                        }
+                        if (hit.transform.gameObject.GetComponent<DoorType>().locked == false)
+                        {
+
+                            hit.transform.gameObject.GetComponent<DoorType>().message = "Press E to Open the door ";
+                        }
                     }
-                    if (hit.transform.gameObject.GetComponent<DoorType>().locked == false)
+                    else
                     {
-
-                        hit.transform.gameObject.GetComponent<DoorType>().message = "Press E to close the door ";
+                        DialoguePanel.gameObject.SetActive(false);
                     }
 
 
@@ -174,54 +181,7 @@ public class PickUpScript : MonoBehaviour
                         
                     }
                 }
-                else if (hit.transform.gameObject.CompareTag("corridorDor"))
-                {
-                    SaveScript.doorObject = hit.transform.gameObject;
-                    Debug.Log(SaveScript.doorObject);
-                    objId = (int)hit.transform.gameObject.GetComponent<DoorType>().chooseDoor;
-                    doorMessageObj.SetActive(true);
-                    doorMessage.text = hit.transform.gameObject.GetComponent<DoorType>().message;
-                    DialogueText.text = "There is a door maybe is there something inside..let'see";
-                    DialoguePanel.gameObject.SetActive(true);
-
-                    if (hit.transform.gameObject.GetComponent<DoorType>().locked == true)
-                    {
-
-                        hit.transform.gameObject.GetComponent<DoorType>().message = "Find the key to open " + hit.transform.gameObject.GetComponent<DoorType>().chooseDoor;
-
-
-                    }
-                    if (hit.transform.gameObject.GetComponent<DoorType>().locked == false)
-                    {
-
-                        hit.transform.gameObject.GetComponent<DoorType>().message = "Press E to close the door ";
-                    }
-
-
-                    if (Input.GetKeyDown(KeyCode.E) && hit.transform.gameObject.GetComponent<DoorType>().locked == false)
-                    {
-                        audioPlayer.clip = pickupSounds[objId];
-                        audioPlayer.Play();
-                        if (hit.transform.gameObject.GetComponent<DoorType>().opened == false)
-                        {
-                            hit.transform.gameObject.GetComponent<DoorType>().message = "Press E to close the door";
-                            hit.transform.gameObject.GetComponent<DoorType>().opened = true;
-                            hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Open");
-
-                        }
-
-                        else if (hit.transform.gameObject.GetComponent<DoorType>().opened == true)
-                        {
-                            hit.transform.gameObject.GetComponent<DoorType>().message = "Press E to open the door";
-                            hit.transform.gameObject.GetComponent<DoorType>().opened = false;
-                            hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Close");
-
-                        }
-
-
-
-                    }
-                }
+      
             }
             else
             {

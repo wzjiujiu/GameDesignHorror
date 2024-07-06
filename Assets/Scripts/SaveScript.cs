@@ -25,6 +25,8 @@ public class SaveScript : MonoBehaviour
 
     public static List<GameObject> monsterChasing= new List<GameObject>();
 
+    public static bool eyesclosed = false;
+
 
 
     // Start is called before the first frame update

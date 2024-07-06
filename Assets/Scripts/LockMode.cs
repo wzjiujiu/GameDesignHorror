@@ -215,7 +215,7 @@ public class LockMode : MonoBehaviour
         {
             // Trigger animation
             animator.SetTrigger("BlinkMouse_1");
-            
+            SaveScript.eyesclosed = true;
         }
 
         if (Input.GetKeyUp(KeyCode.P))
@@ -224,6 +224,7 @@ public class LockMode : MonoBehaviour
             int randomNumber = random.Next(0, 4);
             vol.profile = bliklist[randomNumber];
             animator.SetTrigger("BlinkMouse_2");
+            SaveScript.eyesclosed = false;
           
         }
 
